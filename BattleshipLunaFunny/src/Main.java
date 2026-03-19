@@ -33,7 +33,12 @@ void main() {
             takeTurn(fieldAttR, fieldAttS, turnNum);
         }
     }
-
+    if(turnNum%2 == 0){
+        System.out.println("\nPlayer 2 wins!");
+    }
+    else{
+        System.out.println("\nPlayer 1 wins!");
+    }
 }
 int takeTurn(Battlefield targField, Battlefield shown, int turnNum){
     Scanner sc = new Scanner(System.in);
